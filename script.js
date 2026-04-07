@@ -2,7 +2,7 @@
  * Kinesio Caseros - Micro-interacciones y formulario
  */
 
-// WhatsApp number - REEMPLAZAR con el número real
+/** Debe coincidir con los enlaces wa.me en index.html */
 const WHATSAPP_NUMBER = '5491127412326';
 
 // Micro-interacciones: animación al hacer scroll
@@ -49,15 +49,6 @@ function initForm() {
   });
 }
 
-function updateWhatsAppLinks() {
-  document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && href.includes('XXXXXXXX')) {
-      link.setAttribute('href', href.replace('5491127412326', WHATSAPP_NUMBER));
-    }
-  });
-}
-
 // Smooth scroll para enlaces internos
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -78,5 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initForm();
   initSmoothScroll();
-  updateWhatsAppLinks();
 });
