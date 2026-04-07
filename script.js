@@ -3,7 +3,7 @@
  */
 
 // WhatsApp number - REEMPLAZAR con el número real
-const WHATSAPP_NUMBER = '5491157966147';
+const WHATSAPP_NUMBER = '5491127412326';
 
 // Micro-interacciones: animación al hacer scroll
 function initScrollAnimations() {
@@ -49,12 +49,11 @@ function initForm() {
   });
 }
 
-// Actualizar enlaces de WhatsApp con número real
 function updateWhatsAppLinks() {
   document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
     const href = link.getAttribute('href');
     if (href && href.includes('XXXXXXXX')) {
-      link.setAttribute('href', href.replace('54911XXXXXXXX', WHATSAPP_NUMBER));
+      link.setAttribute('href', href.replace('5491127412326', WHATSAPP_NUMBER));
     }
   });
 }
